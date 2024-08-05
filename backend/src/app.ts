@@ -21,6 +21,11 @@ if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
 
+//Root Route
+app.get("/", (req, res) => {
+  res.send("Welcome to Api");
+});
+
 //--------------------------- ROUTES ------------------------------
 app.use("/api/v1/books", router);
 
