@@ -4,8 +4,9 @@
   "description": "\"# books-directory\"",
   "main": "index.js",
   "scripts": {
-    "start": "cd backend && npm start",
-    "build":"npm install",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "build": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
