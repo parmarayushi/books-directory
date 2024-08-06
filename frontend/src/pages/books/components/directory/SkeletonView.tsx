@@ -9,18 +9,9 @@ export default function SkeletonView() {
       spacing={{ base: 6, sm: "md" }}
       verticalSpacing={{ base: 5, sm: "md" }}
     >
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
-      <SkeletonUi />
+      {[...Array(12)].map((_, index) => (
+        <SkeletonUi key={index} />
+      ))}
     </SimpleGrid>
   );
 }
