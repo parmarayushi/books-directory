@@ -80,7 +80,7 @@ export default function BookDirectory() {
   }
 
   return (
-    <Flex h={"100%"} direction={"column"} align={"center"}>
+    <>
       <Flex gap={10} justify={"flex-end"} align={"center"} w={"100%"} mb={10}>
         {/* Status Dropdowm */}
         <Select
@@ -161,6 +161,6 @@ export default function BookDirectory() {
           totalCount={totalCount}
         />
       )}
-    </Flex>
+    </>
   );
 }

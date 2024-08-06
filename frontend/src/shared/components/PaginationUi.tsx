@@ -26,6 +26,7 @@ export default function PaginationUi({
     <Pagination
       withEdges
       size={"lg"}
+      mt={"auto"}
       total={totalCount}
       onNextPage={handleNextPageHandle}
       onPreviousPage={handlePreviousPageHandle}

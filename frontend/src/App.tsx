@@ -1,4 +1,4 @@
-import { Box, Flex } from "@mantine/core";
+import { Flex } from "@mantine/core";
 import { Outlet } from "react-router-dom";
 import { Header } from "./core/components/header/Header";
 
@@ -10,9 +10,15 @@ function App() {
       style={{ height: "100%", overflow: "hidden" }}
     >
       <Header />
-      <Box p={20} style={{ height: "100%", overflow: "auto" }}>
+      <Flex
+        direction={"column"}
+        align={"center"}
+        p={20}
+        h={"100%"}
+        style={{ overflow: "auto" }}
+      >
         <Outlet />
-      </Box>
+      </Flex>
     </Flex>
   );
 }
