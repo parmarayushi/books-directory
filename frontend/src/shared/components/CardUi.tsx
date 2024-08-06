@@ -11,8 +11,8 @@ import {
 import { IconHeart, IconHeartFilled } from "@tabler/icons-react";
 import { format } from "date-fns/format";
 import { parseISO } from "date-fns/parseISO";
-import { IBooks } from "../../pages/directory/utility/models/books.model";
-import { useUpdateBooksDataMutation } from "../../pages/directory/utility/services/books.service";
+import { IBooks } from "../../pages/books/utility/models/books.model";
+import { useUpdateBooksDataMutation } from "../../pages/books/utility/services/books.service";
 import noImageFound from "./../../../public/no-img-found.png";
 
 export default function CardUi({ data }: { data: IBooks }) {

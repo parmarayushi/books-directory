@@ -2,9 +2,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import { FileRoutes } from "./core/utility/enums/core.enums";
-import BookDetails from "./pages/bookDetails/BookDetails";
-import BookDirectory from "./pages/directory/BookDirectory";
-import Favorite from "./pages/favorite/Favorite";
+import BookDetails from "./pages/books/components/bookDetails/BookDetails";
+import BookDirectory from "./pages/books/components/directory/BookDirectory";
+import Favorite from "./pages/books/components/favorite/Favorite";
 
 function AppRoutes() {
   const routes: any = [

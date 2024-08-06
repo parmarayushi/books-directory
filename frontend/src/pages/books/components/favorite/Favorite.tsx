@@ -2,13 +2,13 @@ import { Flex, Image, Input, SimpleGrid, Text } from "@mantine/core";
 import { IconSearch } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import CardUi from "../../shared/components/CardUi";
-import PaginationUi from "../../shared/components/PaginationUi";
-import { debounce } from "../../shared/utility/functions/function";
-import SkeletonView from "../directory/components/SkeletonView";
-import { IBooks } from "../directory/utility/models/books.model";
-import { useGetBooksQuery } from "../directory/utility/services/books.service";
-import NoRecordFound from "./../../../public/NoRecordFound.png";
+import CardUi from "../../../../shared/components/CardUi";
+import PaginationUi from "../../../../shared/components/PaginationUi";
+import { debounce } from "../../../../shared/utility/functions/function";
+import { IBooks } from "../../utility/models/books.model";
+import { useGetBooksQuery } from "../../utility/services/books.service";
+import SkeletonView from "../directory/SkeletonView";
+import NoRecordFound from "./../../../../../public/NoRecordFound.png";
 
 export default function Favorite() {
   const [booksData, setBooksData] = useState<IBooks[]>();

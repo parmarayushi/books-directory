@@ -1,5 +1,5 @@
 import { SimpleGrid } from "@mantine/core";
-import SkeletonUi from "../../../shared/components/SkeletonUi";
+import SkeletonUi from "../../../../shared/components/SkeletonUi";
 
 export default function SkeletonView() {
   return (

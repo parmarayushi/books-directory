@@ -10,16 +10,16 @@ import {
 import { IconSearch } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import CardUi from "../../shared/components/CardUi";
-import PaginationUi from "../../shared/components/PaginationUi";
-import { debounce } from "../../shared/utility/functions/function";
-import NoRecordFound from "./../../../public/NoRecordFound.png";
-import SkeletonView from "./components/SkeletonView";
-import { IBooks } from "./utility/models/books.model";
+import CardUi from "../../../../shared/components/CardUi";
+import PaginationUi from "../../../../shared/components/PaginationUi";
+import { debounce } from "../../../../shared/utility/functions/function";
+import { IBooks } from "../../utility/models/books.model";
 import {
   useGetBooksQuery,
   useGetStatusAuthorCategoriesDataQuery,
-} from "./utility/services/books.service";
+} from "../../utility/services/books.service";
+import NoRecordFound from "./../../../../../public/NoRecordFound.png";
+import SkeletonView from "./SkeletonView";
 
 export default function BookDirectory() {
   const [booksData, setBooksData] = useState<IBooks[]>();

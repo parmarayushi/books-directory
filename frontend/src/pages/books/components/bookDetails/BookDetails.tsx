@@ -13,9 +13,9 @@ import { format } from "date-fns/format";
 import { parseISO } from "date-fns/parseISO";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { IBooks } from "../directory/utility/models/books.model";
-import { useGetBooksByIdQuery } from "../directory/utility/services/books.service";
-import noImageFound from "./../../../public/no-img-found.png";
+import { IBooks } from "../../utility/models/books.model";
+import { useGetBooksByIdQuery } from "../../utility/services/books.service";
+import noImageFound from "./../../../../../public/no-img-found.png";
 
 export default function BookDetails() {
   const { id } = useParams();
